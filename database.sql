@@ -25,6 +25,8 @@ CREATE TABLE IF NOT EXISTS notas (
   FOREIGN KEY (aluno_id) REFERENCES alunos(id)
 );
 
+--Dados fakes para testes.
+
 INSERT INTO turmas (nome, ano) VALUES ('Turma A', 2025), ('Turma B', 2025);
 INSERT INTO alunos (nome, email, turma_id) VALUES
   ('João Silva', 'joao@email.com', 1),
