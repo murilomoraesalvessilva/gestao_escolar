@@ -1,0 +1,21 @@
+{
+    "name": "escola/sistema",
+    "description": "Sistema de gestão escolar",
+    "type": "project",
+    "autoload": {
+        "psr-4": {
+            "Escola\\Sistema\\": "app/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Murilo Moraes Alves Silva"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {
+        "knplabs/knp-snappy": "^1.6",
+        "phpoffice/phpword": "^1.1",
+        "phpoffice/phpspreadsheet": "^5.6"
+    }
+}
