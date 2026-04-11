@@ -1,3 +1,4 @@
+SET NAMES utf8mb4;
 USE escola;
 
 CREATE TABLE IF NOT EXISTS turmas (

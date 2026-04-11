@@ -12,7 +12,7 @@ function getConnection(): PDO {
         $attempts = 0;
         while ($attempts < 5) {
             try {
-                $dsn = "mysql:host=" . DB_HOST . ";port=3306;dbname=" . DB_NAME . ";charset=utf8";
+                $dsn = "mysql:host=" . DB_HOST . ";port=3306;dbname=" . DB_NAME . ";charset=utf8mb4";
                 $pdo = new PDO(
                     $dsn,
                     DB_USER,
@@ -22,13 +22,13 @@ function getConnection(): PDO {
                         PDO::ATTR_DEFAULT_FETCH_MODE => PDO::FETCH_ASSOC,
                     ]
                 );
-                break; // conexão ok, sai do loop
+                break;
             } catch (PDOException $e) {
                 $attempts++;
                 if ($attempts >= 5) {
                     die("Erro na conexão após várias tentativas: " . $e->getMessage());
                 }
-                sleep(2); // espera 2 segundos antes de tentar de novo
+                sleep(2);
             }
         }
     }
