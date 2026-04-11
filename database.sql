@@ -1,4 +1,3 @@
-CREATE DATABASE IF NOT EXISTS escola;
 USE escola;
 
 CREATE TABLE IF NOT EXISTS turmas (
@@ -25,15 +24,18 @@ CREATE TABLE IF NOT EXISTS notas (
   FOREIGN KEY (aluno_id) REFERENCES alunos(id)
 );
 
--- Dados fakes para testes.
+-- Dados de exemplo
+INSERT INTO turmas (nome, ano) VALUES 
+  ('Turma A', 2025), 
+  ('Turma B', 2025);
 
-INSERT INTO turmas (nome, ano) VALUES ('Turma A', 2025), ('Turma B', 2025);
 INSERT INTO alunos (nome, email, turma_id) VALUES
   ('João Silva', 'joao@email.com', 1),
   ('Maria Souza', 'maria@email.com', 1),
   ('Pedro Lima', 'pedro@email.com', 2);
+
 INSERT INTO notas (aluno_id, disciplina, nota, data_lancamento) VALUES
-  (1, 'Matemática', 8.5, '2025-03-10'),
-  (1, 'Português', 7.0, '2025-03-10'),
-  (2, 'Matemática', 9.0, '2025-03-11'),
-  (3, 'Física', 6.5, '2025-03-12');
+  (1, 'Matemática', 8.5, '2026-04-11'),
+  (1, 'Português', 7.0, '2026-04-11'),
+  (2, 'Matemática', 9.0, '2026-04-11'),
+  (3, 'Física', 6.5, '2026-04-11');
