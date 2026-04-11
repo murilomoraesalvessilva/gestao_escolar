@@ -26,8 +26,8 @@ CREATE TABLE IF NOT EXISTS notas (
 
 -- Dados de exemplo
 INSERT INTO turmas (nome, ano) VALUES 
-  ('Turma A', 2025), 
-  ('Turma B', 2025);
+  ('Turma A', 2026), 
+  ('Turma B', 2026);
 
 INSERT INTO alunos (nome, email, turma_id) VALUES
   ('João Silva', 'joao@email.com', 1),
