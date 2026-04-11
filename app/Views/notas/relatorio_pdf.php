@@ -17,7 +17,7 @@
 </head>
 <body>
     <div class="cabecalho">
-        <h1>🏫 Escola Municipal</h1>
+        <h1>Escola Municipal</h1>
         <p>Relatório de Notas — Gerado em <?= date('d/m/Y H:i') ?></p>
     </div>
 

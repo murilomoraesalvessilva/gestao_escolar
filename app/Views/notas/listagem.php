@@ -64,9 +64,9 @@
 </table>
 
 <div class="d-flex gap-2">
-    <a href="/nota/listar?<?= http_build_query($_GET) ?>&export=pdf" class="btn btn-danger">📄 Exportar PDF</a>
-    <a href="/nota/listar?<?= http_build_query($_GET) ?>&export=docx" class="btn btn-primary">📝 Exportar DOCX</a>
-    <a href="/nota/listar?<?= http_build_query($_GET) ?>&export=excel" class="btn btn-success">📊 Exportar Excel</a>
+    <a href="/nota/listar?<?= http_build_query($_GET) ?>&export=pdf" class="btn btn-danger">Exportar PDF</a>
+    <a href="/nota/listar?<?= http_build_query($_GET) ?>&export=docx" class="btn btn-primary">Exportar DOCX</a>
+    <a href="/nota/listar?<?= http_build_query($_GET) ?>&export=excel" class="btn btn-success">Exportar Excel</a>
     <a href="/nota/criar" class="btn btn-outline-dark ms-auto">+ Lançar Nota</a>
 </div>
 <?php
